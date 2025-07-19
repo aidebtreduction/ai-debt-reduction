@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import Image from "next/image";
@@ -15,7 +16,7 @@ const chartData = [
   { year: "2034", debt: 17.7, adjusted: 22.04 },
 ];
 
-export default function Home() {
+export default function AIDebtSolutionWebsite() {
   const [showAdjusted, setShowAdjusted] = useState(true);
 
   return (
@@ -31,6 +32,7 @@ export default function Home() {
             alt="AI balancing economy and debt"
             width={600}
             height={300}
+            className="rounded shadow"
           />
         </div>
       </section>
@@ -46,6 +48,7 @@ export default function Home() {
           alt="Chart showing national debt over time"
           width={700}
           height={350}
+          className="rounded mt-4"
         />
       </section>
 
@@ -63,6 +66,7 @@ export default function Home() {
             alt="AI data processing visualization"
             width={600}
             height={300}
+            className="rounded"
           />
         </div>
       </section>
